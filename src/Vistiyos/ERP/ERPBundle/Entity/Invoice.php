@@ -2,6 +2,7 @@
 
 namespace Vistiyos\ERP\ERPBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -69,6 +70,16 @@ class Invoice
      * @ORM\JoinColumn(name="contact_id",referencedColumnName="id")
      */
     private $contact;
+
+    /**
+     * @var ArrayCollection
+     */
+    private $invoiceLines;
+
+    public function __construct()
+    {
+        $this->invoiceLines = new ArrayCollection();
+    }
 
     /**
      * Get id
@@ -232,7 +243,7 @@ class Invoice
      * Set contact
      *
      * @param Contact $contact Contact
-     * 
+     *
      * @return $this
      */
     public function setContact(Contact $contact)
