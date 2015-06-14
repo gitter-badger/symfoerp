@@ -1,3 +1,7 @@
+vistiyos_erperp:
+    resource: "@VistiyosERPERPBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
