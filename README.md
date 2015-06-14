@@ -1,4 +1,4 @@
-# SymfoERP
+# SymfoERP [![Build Status](https://travis-ci.org/vistiyos/symfoerp.svg?branch=master)](https://travis-ci.org/vistiyos/symfoerp)
 
 **ERP System OpenSource based on Symfony full stack.**
 
