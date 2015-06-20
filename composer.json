@@ -21,9 +21,11 @@
     "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
     "incenteev/composer-parameter-handler": "~2.0",
     "friendsofsymfony/user-bundle": "~2.0@dev",
-    "braincrafted/bootstrap-bundle": "^2.1",
     "twbs/bootstrap": "3.0.*",
-    "jquery/jquery":  "1.11.*"
+    "jquery/jquery":  "1.11.*",
+    "knplabs/knp-menu": "~2.0",
+    "knplabs/knp-menu-bundle": "~2",
+    "sp/bower-bundle": "^0.11.0"
   },
   "repositories": [
     {
@@ -52,7 +54,8 @@
       "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
       "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
       "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+      "Sp\\BowerBundle\\Composer\\ScriptHandler::bowerInstall"
     ],
     "post-update-cmd": [
       "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
@@ -61,7 +64,8 @@
       "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
       "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
       "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+      "Sp\\BowerBundle\\Composer\\ScriptHandler::bowerInstall"
     ]
   },
   "config": {

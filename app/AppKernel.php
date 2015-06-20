@@ -19,7 +19,8 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new Vistiyos\ERP\ERPBundle\VistiyosERPERPBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-            new Braincrafted\Bundle\BootstrapBundle\BraincraftedBootstrapBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Sp\BowerBundle\SpBowerBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
