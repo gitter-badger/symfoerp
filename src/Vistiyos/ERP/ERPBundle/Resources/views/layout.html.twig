@@ -5,25 +5,29 @@
     <title>Bootstrap 101 Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" media="screen">
-
-    <!-- HTML5 Shim and Respond.js add IE8 support of HTML5 elements and media queries -->
-    {% include 'BraincraftedBootstrapBundle::ie8-support.html.twig' %}
-    {% stylesheets 'bundles/vistiyoserperp/css/common.css' filter='cssrewrite' %}
+    {% stylesheets
+    "bundles/vistiyoserperp/components/bootstrap/dist/css/bootstrap.min.css"
+    "bundles/vistiyoserperp/components/font-awesome/css/font-awesome.min.css"
+    "bundles/vistiyoserperp/css/common.css" filter='cssrewrite' %}
     <link rel="stylesheet" href="{{ asset_url }}"/>
     {% endstylesheets %}
     {% block stylesheets %}
     {% endblock %}
-
 </head>
 
 <body>
-{% block body %}
+{% block menu %}
 {% endblock %}
+<div class="container" role="main">
+    {% block body %}
+    {% endblock %}
+</div>
 
-<!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
-<script src="{{ asset('js/jquery.js') }}"></script>
 <!-- Include all JavaScripts, compiled by Assetic -->
-<script src="{{ asset('js/bootstrap.js') }}"></script>
+{% javascripts
+"bundles/vistiyoserperp/components/jquery/dist/jquery.min.js"
+"bundles/vistiyoserperp/components/bootstrap/dist/js/bootstrap.min.js" %}
+<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
 </body>
 </html>
