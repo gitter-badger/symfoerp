@@ -23,12 +23,12 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        {{ knp_menu_render('VistiyosERPERPBundle:Builder:mainMenu') }}
+        {{ knp_menu_render('VistiyosERPERPBundle:Builder:mainMenu',{'template':'VistiyosERPERPBundle:Menu:knp_menu.html.twig'}) }}
         <!-- /.navbar-collapse -->
 
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse">
-                {{ knp_menu_render('VistiyosERPERPBundle:Builder:sidebarMenu') }}
+                {{ knp_menu_render('VistiyosERPERPBundle:Builder:sidebarMenu',{'template':'VistiyosERPERPBundle:Menu:knp_menu.html.twig'}) }}
             </div>
         </div>
     </nav>

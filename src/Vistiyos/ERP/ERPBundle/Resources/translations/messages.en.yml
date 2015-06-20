@@ -1,0 +1,7 @@
+security:
+  login:
+    username: Username
+    password: Password
+    remember_me: Remember Me
+    submit: Log in
+    title: Please Sign In
