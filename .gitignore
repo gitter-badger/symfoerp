@@ -11,4 +11,3 @@
 /web/bundles/
 .idea
 src/Vistiyos/ERP/ERPBundle/Resources/public/components
-composer.lock
