@@ -1,7 +1,10 @@
 language: php
 php:
-  - 5.4
-  - 5.5
-  - 5.6
-  - hhvm
-  - nightly
+- 5.4
+- 5.5
+- 5.6
+- hhvm
+- nightly
+notifications:
+  slack:
+    secure: erF194HxA3xPpgF8Owx3nwWsJOw9T5JeA8xzfHoZEzhFx/uzOtqDHUvSIyJsST0iTPJjPJ8fJVdHMJ1nk8tgtj5z8qUswebEi+XYy5llOtzHcOI/pCkcztK0A/5W7C4CxnnzrBcY4NfKVuwSPPdn18mD0ffih9xLJaVs883qm1KQH/ZfMGs/C3pJUMwglLqcJ+m3J6GEzFgj3f8H/IP7K0jwZekMOKdoy6PFbqTXR5M46M6IuMgBu9rBddDzAqb0aQrio3Tww9J5Pw83aUT2jh/Ng7Zm64nGbsOvMSRQ5+CYbvMAvuxeX05fIu2LqGTKVSL4bz55ZUsIPKfvN9sypaPAri5jPQClWTb+p8oOsD4Xk5irDUx/sI6fH13JTIHL58O0XaJHuQO0sovwRVfZxyaXHij9cX8An4Hjb2q2DN5vQNvgd9pwMjS4TVpoS/B8tYE7Sbwz4FV/jlJi3C80OA6n/P/2wuMK46VyfKZl8eQjTYnJ5CiXDm9q9x8D22XoCFFXLaSaXoI2L6nbr5QGCfmZGvPsYqWClWVPgLq8aSmxdlwyzDcg352X+Quzbvkvy/54BPbIbhYj3sxiAAeeH4FXhl3Eym8hyrPa28Gcglo5tQJ2rX0EwxEz8WPtPlGkJMnBXAuSS3z/e38W1doEFDr1tYR18GNc8FuGLNp06mQ=
