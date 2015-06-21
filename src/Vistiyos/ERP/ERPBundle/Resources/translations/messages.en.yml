@@ -5,3 +5,7 @@ security:
     remember_me: Remember Me
     submit: Log in
     title: Please Sign In
+profile:
+  edit:
+    title: Edit Profile
+    submit: Save changes

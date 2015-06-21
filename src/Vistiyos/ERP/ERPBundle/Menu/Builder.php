@@ -31,7 +31,7 @@ class Builder extends ContainerAware
             ->setAttribute('icon', 'user');
 
         $menu['User']
-            ->addChild('Edit profile', ['route' => 'fos_user_profile_show'])
+            ->addChild('Edit profile', ['route' => 'fos_user_profile_edit'])
             ->setAttribute('icon', 'pencil');
 
         return $menu;
