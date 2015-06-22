@@ -9,3 +9,5 @@ profile:
   edit:
     title: Edit Profile
     submit: Save changes
+contacts:
+  title: Contacts

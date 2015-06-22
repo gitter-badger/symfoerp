@@ -1,0 +1,11 @@
+security:
+  login:
+    username: Usuario
+    password: Contraseña
+    remember_me: Recuerdame
+    submit: Entrar
+    title: Por favor, Inicie sesión
+profile:
+  edit:
+    title: Editar Perfil
+    submit: Guardar cambios

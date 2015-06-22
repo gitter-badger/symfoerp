@@ -1,3 +1,6 @@
 main:
   edit_profile: Edit Profile
   logout: Logout
+sidebar:
+  contacts: Contacts
+  invoices: Invoices
