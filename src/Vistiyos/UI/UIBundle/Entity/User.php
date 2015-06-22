@@ -28,4 +28,10 @@ class User extends BaseUser
      */
     protected $id;
 
+    /**
+     * @var string
+     * @ORM\Column(name="locale", type="string",length=2)
+     */
+    protected $locale;
+
 }
