@@ -1,3 +1,15 @@
 vistiyos_ui_homepage:
     path:     /
     defaults: { _controller: VistiyosUIUIBundle:Index:index }
+
+contacts:
+    path:     /contacts
+    defaults: { _controller: VistiyosUIUIBundle:Contacts:contacts }
+
+contact:
+    path:     /contact
+    defaults: { _controller: VistiyosUIUIBundle:Contacts:contact }
+
+edit_contact:
+    path:     /contact/edit
+    defaults: { _controller: VistiyosUIUIBundle:Contacts:editContact }

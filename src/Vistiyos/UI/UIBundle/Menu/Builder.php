@@ -47,8 +47,14 @@ class Builder extends ContainerAware
         $menu->setChildrenAttribute('class', 'nav');
         $menu->setChildrenAttribute('id', 'side-menu');
 
-        $menu->addChild('Dashboard', ['route' => 'vistiyos_ui_homepage']);
-        $menu->addChild('Charts', ['route' => 'vistiyos_ui_homepage']);
+        $menu
+            ->addChild('sidebar.contacts', ['route' => 'contacts'])
+            ->setAttribute('icon', 'user');
+
+        $menu
+            ->addChild('sidebar.invoices', ['route' => 'vistiyos_ui_homepage'])
+            ->setAttribute('icon', 'file');
+
         $menu->addChild('Tables', ['route' => 'vistiyos_ui_homepage']);
         $menu->addChild('Forms', ['route' => 'vistiyos_ui_homepage']);
         $menu->addChild('UI Elements', ['route' => 'vistiyos_ui_homepage']);
