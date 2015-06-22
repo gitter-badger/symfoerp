@@ -43,35 +43,35 @@ class InvoiceLine
     private $quantity;
 
     /**
-     * @var string
+     * @var float
      *
      * @ORM\Column(name="discount", type="decimal")
      */
     private $discount;
 
     /**
-     * @var string
+     * @var float
      *
      * @ORM\Column(name="vatPercent", type="decimal")
      */
     private $vatPercent;
 
     /**
-     * @var string
+     * @var float
      *
      * @ORM\Column(name="net", type="decimal")
      */
     private $net;
 
     /**
-     * @var string
+     * @var float
      *
      * @ORM\Column(name="vat", type="decimal")
      */
     private $vat;
 
     /**
-     * @var string
+     * @var float
      *
      * @ORM\Column(name="total", type="decimal")
      */
@@ -203,7 +203,7 @@ class InvoiceLine
     /**
      * Get vatPercent
      *
-     * @return string
+     * @return float
      */
     public function getVatPercent()
     {
@@ -213,7 +213,7 @@ class InvoiceLine
     /**
      * Set net
      *
-     * @param string $net
+     * @param float $net
      * @return InvoiceLine
      */
     public function setNet($net)
@@ -226,7 +226,7 @@ class InvoiceLine
     /**
      * Get net
      *
-     * @return string
+     * @return float
      */
     public function getNet()
     {
@@ -236,7 +236,7 @@ class InvoiceLine
     /**
      * Set vat
      *
-     * @param string $vat
+     * @param float $vat
      * @return InvoiceLine
      */
     public function setVat($vat)
@@ -249,7 +249,7 @@ class InvoiceLine
     /**
      * Get vat
      *
-     * @return string
+     * @return float
      */
     public function getVat()
     {
@@ -259,7 +259,7 @@ class InvoiceLine
     /**
      * Set total
      *
-     * @param string $total
+     * @param float $total
      * @return InvoiceLine
      */
     public function setTotal($total)

@@ -66,7 +66,7 @@ class Invoice
 
     /**
      * @var Contact
-     * @ORM\ManyToOne(targetEntity="Vistiyos\ERP\ERPBundle\Entity\Contact", inversedBy="invoices")
+     * @ORM\ManyToOne(targetEntity="Vistiyos\CRM\CRMBundle\Entity\Contact", inversedBy="invoices")
      * @ORM\JoinColumn(name="contact_id",referencedColumnName="id")
      */
     private $contact;

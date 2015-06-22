@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Contact
  *
- * @ORM\Table()
+ * @ORM\Table(name="contacts")
  * @ORM\Entity
  */
 class Contact
@@ -90,9 +90,16 @@ class Contact
      */
     private $invoices;
 
+    /**
+     * @var array
+     * @ORM\OneToMany(targetEntity="ContactAttributeValue", mappedBy="contact")
+     */
+    private $attributes;
+
     public function __construct()
     {
         $this->invoices = new ArrayCollection();
+        $this->attributes = new ArrayCollection();
     }
 
     /**
