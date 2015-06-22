@@ -1,6 +1,6 @@
 <?php
 
-namespace Vistiyos\ERP\ERPBundle\Entity;
+namespace Vistiyos\CRM\CRMBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;

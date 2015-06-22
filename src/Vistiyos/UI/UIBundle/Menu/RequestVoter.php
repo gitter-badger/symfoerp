@@ -6,7 +6,7 @@
  * Time: 1:29
  */
 
-namespace Vistiyos\ERP\ERPBundle\Menu;
+namespace Vistiyos\UI\UIBundle\Menu;
 
 
 use Knp\Menu\ItemInterface;

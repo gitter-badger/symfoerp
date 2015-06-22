@@ -1,0 +1,3 @@
+vistiyos_crmcrm_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: VistiyosCRMCRMBundle:Default:index }

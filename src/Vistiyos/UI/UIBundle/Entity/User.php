@@ -6,7 +6,7 @@
  * Time: 18:47
  */
 
-namespace Vistiyos\ERP\ERPBundle\Entity;
+namespace Vistiyos\UI\UIBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;

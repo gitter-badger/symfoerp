@@ -1,0 +1,3 @@
+vistiyos_ui_homepage:
+    path:     /
+    defaults: { _controller: VistiyosUIUIBundle:Index:index }

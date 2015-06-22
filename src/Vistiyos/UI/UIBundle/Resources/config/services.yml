@@ -1,0 +1,7 @@
+services:
+    vistiyos_erperp.menu.voter.request:
+        class: Vistiyos\UI\UIBundle\Menu\RequestVoter
+        arguments:
+            - @service_container
+        tags:
+            - { name: knp_menu.voter }

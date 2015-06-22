@@ -42,7 +42,7 @@ twig:
 assetic:
     debug:          "%kernel.debug%"
     use_controller: false
-    bundles:        [FOSUserBundle,VistiyosERPERPBundle]
+    bundles:        [FOSUserBundle,VistiyosUIUIBundle]
     #java: /usr/bin/java
     filters:
         less:
@@ -84,10 +84,10 @@ swiftmailer:
 fos_user:
     db_driver: orm
     firewall_name: main
-    user_class: \Vistiyos\ERP\ERPBundle\Entity\User
+    user_class: \Vistiyos\UI\UIBundle\Entity\User
 
 sp_bower:
     install_on_warmup: true
     bundles:
-        VistiyosERPERPBundle:
+        VistiyosUIUIBundle:
           cache: %kernel.root_dir%/cache

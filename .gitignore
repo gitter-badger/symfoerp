@@ -10,4 +10,5 @@
 /vendor/
 /web/bundles/
 .idea
-src/Vistiyos/ERP/ERPBundle/Resources/public/components
+src/Vistiyos/UI/UIBundle/Resources/public/components
+tests/_output/*

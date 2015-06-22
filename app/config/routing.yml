@@ -1,3 +1,11 @@
+vistiyos_uiui:
+    resource: "@VistiyosUIUIBundle/Resources/config/routing.yml"
+    prefix:   /
+
+vistiyos_crmcrm:
+    resource: "@VistiyosCRMCRMBundle/Resources/config/routing.yml"
+    prefix:   /
+
 vistiyos_erperp:
     resource: "@VistiyosERPERPBundle/Resources/config/routing.yml"
     prefix:   /

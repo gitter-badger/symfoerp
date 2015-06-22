@@ -20,6 +20,8 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Sp\BowerBundle\SpBowerBundle(),
+            new Vistiyos\CRM\CRMBundle\VistiyosCRMCRMBundle(),
+            new Vistiyos\UI\UIBundle\VistiyosUIUIBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

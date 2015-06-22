@@ -1,4 +1,4 @@
-{% extends 'VistiyosERPERPBundle::layout.html.twig' %}
+{% extends 'VistiyosUIUIBundle::layout.html.twig' %}
 
 {% block stylesheets %}
     {% stylesheets
@@ -23,12 +23,12 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        {{ knp_menu_render('VistiyosERPERPBundle:Builder:mainMenu',{'template':'VistiyosERPERPBundle:Menu:knp_menu.html.twig'}) }}
+        {{ knp_menu_render('VistiyosUIUIBundle:Builder:mainMenu',{'template':'VistiyosUIUIBundle:Menu:knp_menu.html.twig'}) }}
         <!-- /.navbar-collapse -->
 
         <div class="navbar-default sidebar" role="navigation">
             <div class="sidebar-nav navbar-collapse">
-                {{ knp_menu_render('VistiyosERPERPBundle:Builder:sidebarMenu',{'template':'VistiyosERPERPBundle:Menu:knp_menu.html.twig'}) }}
+                {{ knp_menu_render('VistiyosUIUIBundle:Builder:sidebarMenu',{'template':'VistiyosUIUIBundle:Menu:knp_menu.html.twig'}) }}
             </div>
         </div>
     </nav>
