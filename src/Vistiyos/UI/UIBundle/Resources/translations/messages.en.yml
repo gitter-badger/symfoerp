@@ -9,5 +9,14 @@ profile:
   edit:
     title: Edit Profile
     submit: Save changes
+  form:
+    name:
+      label: Name:
+      empty_error: Please enter your name
+    locale:
+      label: Language:
+      options:
+        en: English
+        es: Spanish
 contacts:
   title: Contacts

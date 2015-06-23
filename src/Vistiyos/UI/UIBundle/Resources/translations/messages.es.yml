@@ -6,6 +6,15 @@ security:
     submit: Entrar
     title: Por favor, Inicie sesión
 profile:
+  form:
+    name:
+      label: Nombre:
+      empty_error: Por favor, introduzca su nombre
+    locale:
+      label: Idioma:
+      options:
+        en: Inglés
+        es: Español
   edit:
     title: Editar Perfil
     submit: Guardar cambios

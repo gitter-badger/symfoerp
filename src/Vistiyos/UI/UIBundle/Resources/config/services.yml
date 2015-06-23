@@ -1,7 +1,23 @@
 services:
-    vistiyos_erperp.menu.voter.request:
+    vistiyos_ui.menu.voter.request:
         class: Vistiyos\UI\UIBundle\Menu\RequestVoter
         arguments:
             - @service_container
         tags:
             - { name: knp_menu.voter }
+    vistiyos_ui.profile.form.type:
+        class: Vistiyos\UI\UIBundle\Form\Type\ProfileFormType
+        tags:
+          - {name: form.type, alias: vistiyos_ui_profile}
+    vistiyos_ui.events.profile_completed:
+        class: Vistiyos\UI\UIBundle\EventListener\ProfileEditingListener
+        arguments:
+          session: "@session"
+          securityToken: "@security.token_storage"
+        tags:
+          - { name: kernel.event_subscriber }
+    vistiyos_ui.events.locale:
+        class: Vistiyos\UI\UIBundle\EventListener\LocaleListener
+        arguments: ["%%kernel.default_locale%%"]
+        tags:
+          - { name: kernel.event_subscriber}
